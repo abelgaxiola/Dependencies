@@ -7,7 +7,7 @@ namespace Dependencies
     {
         static void Main(string[] args)
         {
-            string procedureName = "dbo.calcUpdate_TotalTax";
+            string procedureName = "StoredProcedureName";
             StoredProcedure sp = new StoredProcedure(procedureName);
             sp.LookForDependencies();
 
@@ -17,7 +17,7 @@ namespace Dependencies
 
             PrintTables(sp.Dependencies);
 
-            Console.Read();
+            Console.ReadKey();
         }
 
         private static void PrintTables(List<string> tables)

@@ -9,7 +9,7 @@ public class ProcedureTests
 
     public ProcedureTests()
     {
-        string procedureName = "dbo.ApproveArc";
+        string procedureName = "dbo.StoredProcedureName";
         SP = new StoredProcedure(procedureName);
         SP.LookForDependencies();
     }
